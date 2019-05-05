@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json和js代码在一个文件中</title>
+</head>
+<body>
+<h2>从JSON字符串中创建对象</h2>
+<p>
+    <span id = "name">名字2222222222222</span>
+    <span id = "url">地址</span>
+</p>
+<script type = "text/javascript" language="javascript">
+    var i = 1;/*es6模式下会报错*/
+    var txt = '{ "sites": [{ "name":"菜鸟教程" , "url":"www.runoob.com" },{ "name":"google" , "url":"www.google.com" },' +
+        '{ "name":"微博" , "url":"www.weibo.com" } ]}';/*最外层字符串化就好，内层的json格式不需要*/
+    var txt2 = { "name":"菜鸟教程2", "url":"www.runoob.com2" };
+    var obj = eval("("+txt+")");
+    document.getElementById("name").innerHTML = obj.sites[0].name;
+    document.getElementById("url").innerHTML =txt2.url;
+
+</script>
+</body>
+</html>

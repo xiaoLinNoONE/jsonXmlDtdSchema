@@ -1,0 +1,21 @@
+<!DOCTYPE TVSCHEDULE[
+        <!--电视节目表 DTD-->
+        <!--由 David Moisan 创造。拷贝自：http://www.davidmoisan.org/-->
+        <!ELEMENT TVSCHEDUE (CHANNEL+)>
+        <!ELEMENT CHANNEL (BANNER , DAY+)>
+        <!ELEMENT BANNER (#PCDATA)>
+        <!ELEMENT DAY (DATE ,(HOLIDAY | PROGRAMSLOT+)+)>
+        <!ELEMENT DATE (#PCDATA)>
+        <!ELEMENT HOLIDAY (#PCDATA)>
+        <!ELEMENT PROGRAMSLOT (TIME , TITLE , DESCRIPTION?)>
+        <!ELEMENT TIME (#PCDATA)>
+        <!ELEMENT TITLE (#PCDATA)>
+        <!ELEMENT DESCRIPTION (#PCDATA)>
+
+        <!ATTLIST TVSCHEDUE NAME CDATA #REQUIRED>
+        <!ATTLIST CHANNEL CHAN CDATA #REQUIRED>
+        <!ATTLIST PROGRAMSLOT #IMPLIED>
+        <!ATTLIST TITLE RATING CDATA #IMPLIED >
+        <!ATTLIST TITLE LANGUAGE CDATA #FIXED "EN">
+
+        ]>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习xml交互</title>
+
+</head>
+<body>
+
+<script>
+    if (window.XMLHttpRequest) /*这个方法可以用在Chrome和ie，w3school里的load方法不能在chrome中使用，会报错*/
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET","test.xml",false);
+    // xmlhttp.open("GET","test.xml",false);
+    xmlhttp.send();
+    xmlDoc=xmlhttp.responseXML;/*获取xml*/
+
+    document.write("<table border='1'>");
+    var x=xmlDoc.getElementsByTagName("DATE0");/*最好直接用标签，子节点列表ie和谷歌不同的，空格的原因*/
+
+    document.write("<tr><td>");
+    document.write(x[0].childNodes[0].nodeValue,"X")/*获取值，固定的*/
+    document.write(x[0].childNodes.length)
+    document.write(x[0].nodeName);
+    document.write("</td></tr>");
+
+</script>
+
+</body>
+</html>

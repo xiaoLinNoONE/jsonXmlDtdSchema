@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<shiporder orderid = "99900"
+           xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation = "demo_schema.xsd">
+    <orderperson>hello</orderperson>
+    <shipto>
+        <name>Tom</name>
+        <address>NewYORK No11 </address>
+        <city>NewYork</city>
+        <country>US</country>
+    </shipto>
+    <item>
+        <title>The great wall</title>
+        <note>from china</note>
+        <quantity>2</quantity>
+        <price>48</price>
+    </item>
+
+
+
+</shiporder>

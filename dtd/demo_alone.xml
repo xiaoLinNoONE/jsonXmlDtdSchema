@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE TVSCHEDULE SYSTEM "demo_alone.dtd">
+<TVSCHEDULE NAME = "小米" >
+    <CHANNEL CHAN = "4">
+        <BANNER>小米</BANNER>
+        <DAY>
+            <DATE>2018.03.01</DATE>
+            <HOLIDAY>YES</HOLIDAY>
+            <PROGRAMSLOT>
+                <TIME>20：30</TIME>
+                <TITLE RATING = "3" LANGUAGE = "EN" >舞蹈</TITLE>
+                <DESCRIPTION>舞蹈是一个伟大的艺术</DESCRIPTION>
+            </PROGRAMSLOT>
+
+        </DAY>
+
+    </CHANNEL>
+</TVSCHEDULE>

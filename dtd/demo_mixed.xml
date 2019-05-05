@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE NEWSPAPER [
+        <!--报纸文章 DTD-->
+        <!--拷贝自：http://www.vervet.com/-->
+        <!ELEMENT NEWSPAPER (ARTICLE+)>
+        <!ELEMENT ARTICLE (HEADLINE*, BYLINE?, LEAD, BODY, NOTES)>
+        <!ELEMENT HEADLINE (#PCDATA)>
+        <!ELEMENT BYLINE (#PCDATA)>
+        <!ELEMENT LEAD (#PCDATA)>
+        <!ELEMENT BODY (#PCDATA)>
+        <!ELEMENT NOTES (#PCDATA)>
+
+        <!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>
+        <!ATTLIST ARTICLE EDITOR CDATA #REQUIRED>
+        <!ATTLIST ARTICLE DATE CDATA #IMPLIED>
+        <!ATTLIST ARTICLE EDITION CDATA #IMPLIED>
+
+        ]>
+<NEWSPAPER>
+    <ARTICLE AUTHOR="小二" EDITOR="小三" DATE="2018.03.02">
+        <HEADLINE>超人归来</HEADLINE>
+        <BYLINE>复活</BYLINE>
+        <LEAD>超人小组</LEAD>
+        <BODY>超人活了过来，他又拯救了地球</BODY>
+        <NOTES>未完待续</NOTES>
+    </ARTICLE>
+</NEWSPAPER>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js调用json文件</title>
+   <!--需要使用vue或者jquery-->
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<h2>从JSON字符串中创建对象</h2>
+<p>
+    <span id = "name">名字2222222222222</span>
+    <span id = "url">地址</span>
+
+</p>
+<script type = "text/javascript" language="javascript">
+
+    $(document).ready(function() {
+        $.getJSON("demo_json_alone.json",
+            function(data) {
+                alert(data.name);
+            });
+    });
+
+</script>
+</body>
+</html>
